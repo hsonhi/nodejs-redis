@@ -17,10 +17,9 @@ client.on('error', (err) => {
 });
 
 // Example usage: setting and getting a key
-async function exampleUsage() {
+async function connection() {
   await client.set('myKey', 'myValue');
   const value = await client.get('myKey');
   console.log('Value retrieved:', value);
 }
-
-exampleUsage();
+connection();
